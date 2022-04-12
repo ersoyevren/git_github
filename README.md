@@ -1,4 +1,4 @@
-### Git_Github Kullanımi
+# Git_Github Kullanımi
 
 ## GitHub nedir?
 
