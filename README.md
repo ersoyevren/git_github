@@ -78,6 +78,7 @@ ismi yazilan dosyayi siliyoruz.
 ismi yazilan dosyayi zorla siliyor.
 
 ### `git branch -r` 
+localdeki branchleri listeliyor.
 
 ### `git branch -a` 
 var olan butun branchleri gorebiliyoruz.
@@ -107,6 +108,10 @@ remote daki dosyayi localdeki dosyaya alir.
 
 ### `git push` 
 daha onceden eslestirilmis localdeki daki dosyada degisiklik yapilmissa bunu remotaki dosyaya gonderir. 
+
+
+### `git fetch` 
+daha onceden remote da yapilan degisiklikleri gosterir. fakat birlestirmez. birlestirmek icin pull kullanmak gerekiyor.
 
 ### `git pull` 
 daha onceden eslestirilmis remote daki dosyada degisiklik yapilmissa bunu localdeki dosyaya alir. 
@@ -154,9 +159,9 @@ o dosyaya gidebiliyorum.
 ### `cd ..` 
 bir ust dosyaya gidebiliyorum.
 
-
-Daha ayrıntılı komutlar için Google'da `github commands` araması yapabilirsiniz.
-
+### `touch .gitignore`
+bu dosyayi olusturduktan sonra icine yazdiklarimizi diger kullanicilar tarafindan gorulemez. bunu git status ile kontrol edebiliriz. 
+ornegin: .gitignore dosyasinin icine var olan deneme dosyasini ekledigimizde artik deneme dosyasi gorulmeyecektir. deneme* yaparak butun **deneme** altindaki dosyalarin gorulmesini engelleyebiliriz. Eger deneme dosyasininin altinda bir dosyanin gorulmesini istiyorsak !deneme/ali diyebiliriz. bu durumda sadece ali dosyasi gorulecektir.
 
 
 
@@ -198,4 +203,30 @@ Takım çalışmalarında branch ismi önemlidir. Takımın her bir üyesi, kend
     NOT: İlk push işlemini gerçekleştirdiğinizde, bir pencere açılacak ve buradan GitHub'a giriş yapmanız istenecektir.
 
     NOT: Visual Studio Code ile çalışırken, sol alt köşede üzerinde çalıştığınız branch ismini görebilirsiniz.
+    
+#GIT  README KULLANIMI
+
+[Standart syntax kuralları](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+[Tablo oluşturmak için syntax kuralları](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables)
+
+Interview Questions
+
+###What is Git?
+
+Git is a free and open source, distributed version-control system for tracking changes in source code during software development.
+
+###What is the major focus of a Version Control System?
+
+A major focus of version control system (also known as revision control or source control) is to manage the changes to the files, programs, logs, and other information related to code development, code deployment, and code operation.
+
+###What is a Repository?
+
+A repository is a directory or storage space where your projects can live. You can keep code files, text files, image files, etc. inside a repository.
+
+###What are the Git states?
+
+Modified,
+Staged,
+Committed.
 
