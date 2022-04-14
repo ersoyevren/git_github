@@ -77,8 +77,6 @@ ismi yazilan dosyayi siliyoruz.
 ### `git branch -d (dosya adi)`
 ismi yazilan dosyayi zorla siliyor.
 
-### `git clone adress` 
-
 ### `git branch -r` 
 
 ### `git branch -a` 
@@ -104,8 +102,14 @@ var olan branchin uzerine adi yazilan branchi birlestirir.
 ### `git push origin (branch ismi)` 
 Bu komut ile, yerelde hazırlanıp kaydedilen değişiklikler, GitHub'daki repository'e gönderilir.
 
-### `git pull` 
+### `git clone adress` 
+remote daki dosyayi localdeki dosyaya alir.
 
+### `git push` 
+daha onceden eslestirilmis localdeki daki dosyada degisiklik yapilmissa bunu remotaki dosyaya gonderir. 
+
+### `git pull` 
+daha onceden eslestirilmis remote daki dosyada degisiklik yapilmissa bunu localdeki dosyaya alir. 
 
 ##ekstra komutlar 
 ### `mkdir (dosya adi)` 
