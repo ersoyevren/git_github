@@ -1,14 +1,159 @@
 # Git_Github Kullanımi
 
+
+## Git nedir?
+Git, yazılım sektöründe versiyon kontrolü amacıyla kullanılan en popüler servislerden bir tanesidir. 
+
 ## GitHub nedir?
 
-Git, yazılım sektöründe versiyon kontrolü amacıyla kullanılan en popüler servislerden bir tanesidir. GitHub ise bu servisin bulut versiyonudur, yani kodlarınızı uzak bir sunucuda Git sistemiyle saklamanıza yardımcı olur.
+GitHub ise bu servisin bulut versiyonudur, yani kodlarınızı uzak bir sunucuda Git sistemiyle saklamanıza yardımcı olur.
 
-GitHub komut satırını kullanırken kullanabileceğiniz yüzlerce komut vardır. Daha kapsamlı bir rehber için [şu rehbere](https://github.com/joshnh/Git-Commands) bakabilirsiniz. Daha ayrıntılı komutlar için Google'da `github commands` araması yapabilirsiniz.
+GitHub komut satırını kullanırken kullanabileceğiniz yüzlerce komut vardır. 
 
-Şimdi GitHub kullanırken sık kullanılan bazı terimlere bakalım.
+## Sık Kullanılan Git&GitHub Terimleri
 
-[![Alt text](https://img.youtube.com/vi/fnxi12JLhNY/0.jpg)](https://www.youtube.com/watch?v=fnxi12JLhNY)
+### `git --version`
+ile gitin yuklu olup olmadigini ve versiyonunu kontrol edebiliriz.
+
+### `git config --global user.name ('kullanici adi')`
+kullanici adini belirliyoruz.
+
+### `git config --global email.name('email adresi')`
+emailimizi belirliyoruz.
+
+### `git config --list`
+yapilandirma ayarlarini gorebiliyoruz.
+
+### `git status` 
+dosyalarin hangi asamada oldugunu goruyoruz. ayrica biz hangi branch ta yer almaktayiz. 
+
+### `git help`
+gitte calisan komutlarin ne anlama geldiginiz gorebiliyoruz.
+
+### `git commit --amend -m 'aciklama'` 
+repository de aciklamada duzenleme yapabiliyoruz.
+
+### `git revert (commit id)`
+istedigimiz committe yapilan degisikligi geriye alma.
+
+### `git commit --help` 
+ornegin commit komutunun ne ise yaradigini gorebiliyoruz.
+
+### `git init` 
+dosyayi takibe aldiriyoruz.
+
+### `git add (dosya adi)` 
+working alanindan dosyayi staging area alanina gonderiyoruz.
+
+### `git add .` 
+dosyadaki butun dosyalari stating area ya gonderiyoruz.
+
+### `git commit -m ('aciklama')` 
+staging areadaki dosyayi local repository e gonderiyoruz.artik dosya takip edilebilir. buradaki aciklama, versiyonda yaptigimiz degisiklik acisindan onemlidir.
+
+### `git rm --cached (dosya adi)` 
+staging areadan working  alanina dosyayi geri gonderiyoruz.
+
+### `git log` 
+commiti ekrana yazdiriyoruz. burada kullanici bilgileri ve id gozukecektir.
+
+### `git log oneline` 
+sadece ekrana commiti tek satirda yazdiriyoruz.
+
+### `git checkout (branch veya code)` 
+gitmek istedigimiz branchin adini yaziyoruz.
+
+### `git log --all` 
+
+### `git branch (branch adi)` 
+yeni bir branch olusturuyor.
+
+### `git checkout -b (dosya adi)`
+yeni bir branch olusurup ona direk gidebiliriz.
+
+### `git branch -d (dosya adi)`
+ismi yazilan dosyayi siliyoruz.
+
+### `git branch -d (dosya adi)`
+ismi yazilan dosyayi zorla siliyor.
+
+### `git clone adress` 
+
+### `git branch -r` 
+
+### `git branch -a` 
+var olan butun branchleri gorebiliyoruz.
+
+### `git -b (yeni branch adi)`
+olusturmak istedigimiz branchin adini yazariz.
+
+
+### `git reset 4r5454 (commit id'si) --hard` 
+commite kesin donus yapilir ve sonraki degisiklikler silinmis olur.
+
+### `git reset 4r5454 (commit id'si) --soft` 
+dosyalari staging areaya ktasiyor.
+
+### `git merge (branch adi)`
+var olan branchin uzerine adi yazilan branchi birlestirir.
+
+### `git log --graph` 
+
+### `git log --all --graph` 
+
+### `git push origin (branch ismi)` 
+Bu komut ile, yerelde hazırlanıp kaydedilen değişiklikler, GitHub'daki repository'e gönderilir.
+
+### `git pull` 
+
+
+##ekstra komutlar 
+### `mkdir (dosya adi)` 
+klasor olustururuz.
+
+### `touch (dosya adi)` 
+yeni bir dosya olustururuz.
+
+### `vim (dosya adi)` 
+dosyanin icine giris yapabiliyorum. ardindan i tusu yazmaya baslayabilirim. daha sonra esc tusu ve :wq komutu ile cikis yapabilirim.
+
+### `explorer.exe .` 
+icinde bulundugumuz dosyayi ayri bir sayfa olarak ekranda acar.
+
+### `rm -rf (dosya adi)` 
+dosyayi sileriz.
+
+### `history` 
+yazdigim komutlarin gecmisini goruruz.
+
+### `clear veya ctrl+c` 
+sayfayi temizliyoruz.
+
+### `cat (dosya adi ve uzantisi)` 
+dosyanin icerigini okuruz.
+
+### `code .`
+
+
+### `pwd` 
+hangi dosyanin icindeyiz gorebiliyoruz.
+
+### `ls` 
+icinde bulundugumuuz dosyanin icindeki dosya ve dizinleri gorebiliyoruz.
+
+### `ls -a` 
+icinde bulundugumuuz dosyanin icindeki gizli dosya ve dizinleri gorebiliyoruz.
+
+### `cd (dosya veya dizin adi)` 
+o dosyaya gidebiliyorum.
+
+### `cd ..` 
+bir ust dosyaya gidebiliyorum.
+
+
+Daha ayrıntılı komutlar için Google'da `github commands` araması yapabilirsiniz.
+
+
 
 
 ## Sık Kullanılan GitHub Terimleri
@@ -43,58 +188,10 @@ Bir projeyi bilgisayarınıza indirmek istediğinizde clone komutunu kullanabili
 
 Terminal'e `git clone https://github.com/reactdersleri/github.git` yazıp gönderdiğinizde, `github` isimli proje, o an bulunduğunuz dizinde `github` ismiyle oluşturulan klasörün içine kopyalanacaktır. Bir repository'e ait clone linkine ulaşmak için, projenin GitHub sayfasında sağ taraftaki yeşil `Clone or download` butonuna basarak yahut projenin linkinin sonuna `.git` uzantısını koyarak erişebilirsiniz.
 
-## Kullanıcı Bilgileri Ayarları
-
-### `git config --global user.email "emailadresiniz@orneksite.com`
-
-Bu komut ile yerelde yaptığınız değişikliklerin hangi GitHub hesabı ile ilişkilendirileceğini ayarlayabilirsiniz.
-
-## Sık Kullanılan GitHub Komutları
-
-Bir önceki derste bilgisayarımıza Git Bash kurmuştuk. Şimdi Git Bash komut satırını kullanarak GitHub projeleri nasıl klonlanır, değişiklikler nasıl kaydedilir, gibi sorulara cevap niteliğindeki bazı komutlara bakalım.
-
-### `git status`
-
-Bu komut, repository'nin mevcut durumunu gösterir. Eğer projede değişiklik yapılmış ancak işlenmemiş (bkz: commit) veya işlenmiş değişiklikler görüntülenebilir.
-
-Örnek bir `git status` komutuna gelen cevap:
-
-    $ git status
-    On branch master
-    Your branch is up to date with 'origin/master'.
-
-    Changes not staged for commit:
-    (use "git add <file>..." to update what will be committed)
-    (use "git restore <file>..." to discard changes in working directory)
-            modified:   README.md
-
-    no changes added to commit (use "git add" and/or "git commit -a")
-
-### `git add .`
-
-Bu komut değişen tüm dosyaları GitHub'a göndermek üzere hazırlar (staging). En sondaki nokta, tüm dosyaları ifade eder. Buraya nokta yerine dosya veya klasör ismi de yazabilirsiniz.
-
-### `git commit -m [commit mesaji]`
-
-Bu komut ile, bir önceki aşamada hazırlanan değişiklikler, bir mesaj ile birlikte yereldeki (localhost) repository'e kaydedilir. Mesaj kısmı, projede yapılan değişiklikleri açıklayıcı olmalıdır.
-
-Örnek: `git commit -m "Header'daki yazım hatası giderildi."`
-
-### `git push origin [branch ismi]`
-
-Bu komut ile, yerelde hazırlanıp kaydedilen değişiklikler, GitHub'daki repository'e gönderilir.
 
 Takım çalışmalarında branch ismi önemlidir. Takımın her bir üyesi, kendi ismiyle yahut üzerinde çalıştığı özelliği açıklayıcı bir branch oluşturmalıdır. Bu branch'a kaydedilen değişiklikler bir `pull request` oluşturularak master branch ile birleştirilmek üzere takım liderinin onayına sunulmalıdır. Böylece hatalı (buggy) kodların gözden geçirilmeden ana ürün olarak sunulmasının önüne geçilecektir.
 
     NOT: İlk push işlemini gerçekleştirdiğinizde, bir pencere açılacak ve buradan GitHub'a giriş yapmanız istenecektir.
-
-### `git checkout -b [branch ismi]`
-
-Belirtilen isimle yeni bir branch oluşturur.
-
-### `git checkout [branch name]`
-
-Belirtilen isimdeki branch'a geçiş yapar.
 
     NOT: Visual Studio Code ile çalışırken, sol alt köşede üzerinde çalıştığınız branch ismini görebilirsiniz.
 
