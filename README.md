@@ -1,5 +1,4 @@
-# Git_Github Kullanımi
-
+## Git_Github Kullanımi
 
 ## Git nedir?
 Git, yazılım sektöründe versiyon kontrolü amacıyla kullanılan en popüler servislerden bir tanesidir. 
@@ -12,7 +11,7 @@ GitHub komut satırını kullanırken kullanabileceğiniz yüzlerce komut vardı
 
 ## Sık Kullanılan Git&GitHub Terimleri
 
-### `git --version`
+### `git --version`e
 ile gitin yuklu olup olmadigini ve versiyonunu kontrol edebiliriz.
 
 ### `git config --global user.name ('kullanici adi')`
@@ -20,6 +19,9 @@ kullanici adini belirliyoruz.
 
 ### `git config --global email.name('email adresi')`
 emailimizi belirliyoruz.
+
+### `git config --global core.editor` 'vim'
+default editoru olarak **vim**i belirlemis olduk.
 
 ### `git config --list`
 yapilandirma ayarlarini gorebiliyoruz.
@@ -29,9 +31,6 @@ dosyalarin hangi asamada oldugunu goruyoruz. ayrica biz hangi branch ta yer alma
 
 ### `git help`
 gitte calisan komutlarin ne anlama geldiginiz gorebiliyoruz.
-
-### `git commit --amend -m 'aciklama'` 
-repository de aciklamada duzenleme yapabiliyoruz.
 
 ### `git revert (commit id)`
 istedigimiz committe yapilan degisikligi geriye alma.
@@ -51,7 +50,13 @@ dosyadaki butun dosyalari stating area ya gonderiyoruz.
 ### `git commit -m ('aciklama')` 
 staging areadaki dosyayi local repository e gonderiyoruz.artik dosya takip edilebilir. buradaki aciklama, versiyonda yaptigimiz degisiklik acisindan onemlidir.
 
-### `git rm --cached (dosya adi)` 
+### `git commit -am ('aciklama')` 
+degisikligi direk add yapmadan commit yapiyor.
+
+### `git commit --ammend -m 'aciklama'` 
+repository de aciklamada kucuk duzenleme yapabiliyoruz.
+
+### `git rm --cached (dosya adi) veya git restore --staged` 
 staging areadan working  alanina dosyayi geri gonderiyoruz.
 
 ### `git log` 
@@ -115,6 +120,18 @@ daha onceden remote da yapilan degisiklikleri gosterir. fakat birlestirmez. birl
 
 ### `git pull` 
 daha onceden eslestirilmis remote daki dosyada degisiklik yapilmissa bunu localdeki dosyaya alir. 
+
+### `git remote add origin repo adress`
+uzaktaki repo ile iletisim kurariz.
+
+
+### `git push -u origin master`
+ilk push da gereklidir.
+
+### `git remote rm origin` 
+uzaktaki origin i siler.
+
+
 
 ##ekstra komutlar 
 ### `mkdir (dosya adi)` 
